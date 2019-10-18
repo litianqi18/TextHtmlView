@@ -20,7 +20,7 @@ public class HtmlParser {
     }
 
     public static Spanned fromHtml(String source, Html.ImageGetter imageGetter) {
-        return Html.fromHtml(source, imageGetter, new UiTagHandler());
+        return Html.fromHtml(source, imageGetter, new MyTagHandler());
     }
 
     public static Spanned fromHtml(String source) {
